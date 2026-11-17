@@ -25,3 +25,5 @@ V19 UPDATE
 - All 28 evolution pages and three renamed Fabled pages have two new distinct action-study JPGs each.
 - Edit an individual page in pages/ to update descriptions, names, and attack image paths.
 - Attack illustrations are composites using the corresponding character art with custom action effects.
+
+V20 UPDATE: Added four independent editable Fabled pages: selkira, orbite, paciencia_abductors, ogoro. Each includes hero PNG, two attack JPGs, and cryptograph JPG. Ogopogo named Ogoro.

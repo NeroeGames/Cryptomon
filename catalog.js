@@ -256,6 +256,38 @@ const catalog = [
     "stage": "Fabled"
   },
   {
+    "id": 33,
+    "name": "Selkira",
+    "type": "Water",
+    "img": "assets/selkira_hero.png",
+    "slug": "selkira",
+    "stage": "Fabled"
+  },
+  {
+    "id": 34,
+    "name": "Orbite",
+    "type": "Lightning",
+    "img": "assets/orbite_hero.png",
+    "slug": "orbite",
+    "stage": "Fabled"
+  },
+  {
+    "id": 35,
+    "name": "Palenciagas",
+    "type": "Lightning",
+    "img": "assets/paciencia_abductors_hero.png",
+    "slug": "paciencia_abductors",
+    "stage": "Fabled"
+  },
+  {
+    "id": 36,
+    "name": "Ogoro",
+    "type": "Water",
+    "img": "assets/ogoro_hero.png",
+    "slug": "ogoro",
+    "stage": "Fabled"
+  },
+  {
     "id": 1,
     "name": "Jaks · Mythic",
     "type": "Plant",
