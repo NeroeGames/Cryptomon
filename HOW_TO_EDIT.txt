@@ -1,0 +1,27 @@
+CRYPTOMON COMPENDIUM V18 — EDITABLE EDITION
+
+Open index.html to browse. No server required.
+
+Every form has its own HTML file in pages/ (60 total).
+To edit a creature, open pages/creature.html in a text editor and locate "const entryData" near the bottom. Change its name, description (desc), biome, origin, attacks, note, and image paths.
+
+Fabled: pages/jaks.html
+Mythic: pages/jaks_mythic.html
+Feral: pages/jaks_feral.html
+
+Shared layout: style.css and app.js.
+Field Index listing: catalog.js.
+Art files: assets/.
+Evolution links: entryData.evolutions (slug matches the destination HTML filename).
+
+All evolution pages currently reuse Fabled attack images and cryptographs until dedicated ones are created. Change the attackImages and cryptograph paths in the evolution page whenever new artwork is ready.
+
+The 60 pages are editable independently. Keep the JSON punctuation valid.
+
+
+V19 UPDATE
+- Renamed Garden Gnome -> Gnomble, Popobawa -> Popobat, Agropelter -> Agrobelter.
+- Each new character has transparent concept artwork.
+- All 28 evolution pages and three renamed Fabled pages have two new distinct action-study JPGs each.
+- Edit an individual page in pages/ to update descriptions, names, and attack image paths.
+- Attack illustrations are composites using the corresponding character art with custom action effects.
