@@ -288,6 +288,62 @@ const catalog = [
     "stage": "Fabled"
   },
   {
+    "id": 37,
+    "name": "Hootveil",
+    "type": "Air",
+    "img": "assets/hootveil_hero.png",
+    "slug": "hootveil",
+    "stage": "Fabled"
+  },
+  {
+    "id": 38,
+    "name": "Snallygaster",
+    "type": "Air",
+    "img": "assets/snallygaster_hero.png",
+    "slug": "snallygaster",
+    "stage": "Fabled"
+  },
+  {
+    "id": 39,
+    "name": "Hodax",
+    "type": "Plant",
+    "img": "assets/hodax_hero.png",
+    "slug": "hodax",
+    "stage": "Fabled"
+  },
+  {
+    "id": 40,
+    "name": "Carmyx",
+    "type": "Normal",
+    "img": "assets/carmyx_hero.png",
+    "slug": "carmyx",
+    "stage": "Fabled"
+  },
+  {
+    "id": 41,
+    "name": "Furrowtrout",
+    "type": "Water",
+    "img": "assets/furrowtrout_hero.png",
+    "slug": "furrowtrout",
+    "stage": "Fabled"
+  },
+  {
+    "id": 42,
+    "name": "Arizamel",
+    "type": "Fire",
+    "img": "assets/arizamel_hero.png",
+    "slug": "arizamel",
+    "stage": "Fabled"
+  },
+  {
+    "id": 43,
+    "name": "Kunekune",
+    "type": "Normal",
+    "img": "assets/kunekune_hero.png",
+    "slug": "kunekune",
+    "stage": "Fabled"
+  },
+  {
     "id": 1,
     "name": "Jaks · Mythic",
     "type": "Plant",
