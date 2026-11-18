@@ -566,5 +566,101 @@ const catalog = [
     "img": "assets/quetzofly_feral.png",
     "slug": "quetzofly_feral",
     "stage": "Feral"
+  },
+  {
+    "id": 5,
+    "name": "Nessi · Mythic",
+    "type": "Water",
+    "img": "assets/nessi_mythic.png",
+    "slug": "nessi_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 10,
+    "name": "Dunewyrm · Mythic",
+    "type": "Fire",
+    "img": "assets/dunewyrm_mythic.png",
+    "slug": "dunewyrm_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 13,
+    "name": "Squonky · Mythic",
+    "type": "Water",
+    "img": "assets/squonky_mythic.png",
+    "slug": "squonky_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 14,
+    "name": "Lovelandor · Mythic",
+    "type": "Water",
+    "img": "assets/lovelandor_mythic.png",
+    "slug": "lovelandor_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 17,
+    "name": "Flatzoid · Mythic",
+    "type": "Lightning",
+    "img": "assets/flatzoid_mythic.png",
+    "slug": "flatzoid_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 21,
+    "name": "Skinwraith · Mythic",
+    "type": "Normal",
+    "img": "assets/skinwraith_mythic.png",
+    "slug": "skinwraith_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 5,
+    "name": "Nessi · Feral",
+    "type": "Water",
+    "img": "assets/nessi_feral.png",
+    "slug": "nessi_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 10,
+    "name": "Dunewyrm · Feral",
+    "type": "Fire",
+    "img": "assets/dunewyrm_feral.png",
+    "slug": "dunewyrm_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 13,
+    "name": "Squonky · Feral",
+    "type": "Water",
+    "img": "assets/squonky_feral.png",
+    "slug": "squonky_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 14,
+    "name": "Lovelandor · Feral",
+    "type": "Water",
+    "img": "assets/lovelandor_feral.png",
+    "slug": "lovelandor_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 17,
+    "name": "Flatzoid · Feral",
+    "type": "Lightning",
+    "img": "assets/flatzoid_feral.png",
+    "slug": "flatzoid_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 21,
+    "name": "Skinwraith · Feral",
+    "type": "Normal",
+    "img": "assets/skinwraith_feral.png",
+    "slug": "skinwraith_feral",
+    "stage": "Feral"
   }
 ];
