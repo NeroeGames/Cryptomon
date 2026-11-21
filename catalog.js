@@ -344,6 +344,62 @@ const catalog = [
     "stage": "Fabled"
   },
   {
+    "id": 44,
+    "name": "Caitsith",
+    "type": "Normal",
+    "img": "assets/caitsith_hero.png",
+    "slug": "caitsith",
+    "stage": "Fabled"
+  },
+  {
+    "id": 45,
+    "name": "Skulltide",
+    "type": "Water",
+    "img": "assets/skulltide_hero.png",
+    "slug": "skulltide",
+    "stage": "Fabled"
+  },
+  {
+    "id": 46,
+    "name": "Phantomotive",
+    "type": "Fire",
+    "img": "assets/phantomotive_hero.png",
+    "slug": "phantomotive",
+    "stage": "Fabled"
+  },
+  {
+    "id": 47,
+    "name": "Keena",
+    "type": "Air",
+    "img": "assets/keena_hero.png",
+    "slug": "keena",
+    "stage": "Fabled"
+  },
+  {
+    "id": 48,
+    "name": "Stelmo",
+    "type": "Lightning",
+    "img": "assets/stelmo_hero.png",
+    "slug": "stelmo",
+    "stage": "Fabled"
+  },
+  {
+    "id": 49,
+    "name": "Wispit",
+    "type": "Fire",
+    "img": "assets/wispit_hero.png",
+    "slug": "wispit",
+    "stage": "Fabled"
+  },
+  {
+    "id": 50,
+    "name": "Kraklet",
+    "type": "Water",
+    "img": "assets/kraken_hero.png",
+    "slug": "kraken",
+    "stage": "Fabled"
+  },
+  {
     "id": 1,
     "name": "Jaks · Mythic",
     "type": "Plant",
@@ -373,6 +429,14 @@ const catalog = [
     "type": "Normal",
     "img": "assets/bramble_mythic.png",
     "slug": "bramble_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 5,
+    "name": "Nessi · Mythic",
+    "type": "Water",
+    "img": "assets/nessi_mythic.png",
+    "slug": "nessi_mythic",
     "stage": "Mythic"
   },
   {
@@ -408,6 +472,14 @@ const catalog = [
     "stage": "Mythic"
   },
   {
+    "id": 10,
+    "name": "Dunewyrm · Mythic",
+    "type": "Fire",
+    "img": "assets/dunewyrm_mythic.png",
+    "slug": "dunewyrm_mythic",
+    "stage": "Mythic"
+  },
+  {
     "id": 11,
     "name": "Cinder · Mythic",
     "type": "Fire",
@@ -421,6 +493,22 @@ const catalog = [
     "type": "Fire",
     "img": "assets/jerzimp_mythic.png",
     "slug": "jerzimp_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 13,
+    "name": "Squonky · Mythic",
+    "type": "Water",
+    "img": "assets/squonky_mythic.png",
+    "slug": "squonky_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 14,
+    "name": "Lovelandor · Mythic",
+    "type": "Water",
+    "img": "assets/lovelandor_mythic.png",
+    "slug": "lovelandor_mythic",
     "stage": "Mythic"
   },
   {
@@ -440,11 +528,27 @@ const catalog = [
     "stage": "Mythic"
   },
   {
+    "id": 17,
+    "name": "Flatzoid · Mythic",
+    "type": "Lightning",
+    "img": "assets/flatzoid_mythic.png",
+    "slug": "flatzoid_mythic",
+    "stage": "Mythic"
+  },
+  {
     "id": 18,
     "name": "Greylien · Mythic",
     "type": "Lightning",
     "img": "assets/greylien_mythic.png",
     "slug": "greylien_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 21,
+    "name": "Skinwraith · Mythic",
+    "type": "Normal",
+    "img": "assets/skinwraith_mythic.png",
+    "slug": "skinwraith_mythic",
     "stage": "Mythic"
   },
   {
@@ -488,6 +592,14 @@ const catalog = [
     "stage": "Feral"
   },
   {
+    "id": 5,
+    "name": "Nessi · Feral",
+    "type": "Water",
+    "img": "assets/nessi_feral.png",
+    "slug": "nessi_feral",
+    "stage": "Feral"
+  },
+  {
     "id": 6,
     "name": "Voltwing · Feral",
     "type": "Lightning",
@@ -520,6 +632,14 @@ const catalog = [
     "stage": "Feral"
   },
   {
+    "id": 10,
+    "name": "Dunewyrm · Feral",
+    "type": "Fire",
+    "img": "assets/dunewyrm_feral.png",
+    "slug": "dunewyrm_feral",
+    "stage": "Feral"
+  },
+  {
     "id": 11,
     "name": "Cinder · Feral",
     "type": "Fire",
@@ -533,102 +653,6 @@ const catalog = [
     "type": "Fire",
     "img": "assets/jerzimp_feral.png",
     "slug": "jerzimp_feral",
-    "stage": "Feral"
-  },
-  {
-    "id": 15,
-    "name": "Houshippo · Feral",
-    "type": "Plant",
-    "img": "assets/houshippo_feral.png",
-    "slug": "houshippo_feral",
-    "stage": "Feral"
-  },
-  {
-    "id": 16,
-    "name": "Raiko · Feral",
-    "type": "Lightning",
-    "img": "assets/raiko_feral.png",
-    "slug": "raiko_feral",
-    "stage": "Feral"
-  },
-  {
-    "id": 18,
-    "name": "Greylien · Feral",
-    "type": "Lightning",
-    "img": "assets/greylien_feral.png",
-    "slug": "greylien_feral",
-    "stage": "Feral"
-  },
-  {
-    "id": 26,
-    "name": "Quetzofly · Feral",
-    "type": "Air",
-    "img": "assets/quetzofly_feral.png",
-    "slug": "quetzofly_feral",
-    "stage": "Feral"
-  },
-  {
-    "id": 5,
-    "name": "Nessi · Mythic",
-    "type": "Water",
-    "img": "assets/nessi_mythic.png",
-    "slug": "nessi_mythic",
-    "stage": "Mythic"
-  },
-  {
-    "id": 10,
-    "name": "Dunewyrm · Mythic",
-    "type": "Fire",
-    "img": "assets/dunewyrm_mythic.png",
-    "slug": "dunewyrm_mythic",
-    "stage": "Mythic"
-  },
-  {
-    "id": 13,
-    "name": "Squonky · Mythic",
-    "type": "Water",
-    "img": "assets/squonky_mythic.png",
-    "slug": "squonky_mythic",
-    "stage": "Mythic"
-  },
-  {
-    "id": 14,
-    "name": "Lovelandor · Mythic",
-    "type": "Water",
-    "img": "assets/lovelandor_mythic.png",
-    "slug": "lovelandor_mythic",
-    "stage": "Mythic"
-  },
-  {
-    "id": 17,
-    "name": "Flatzoid · Mythic",
-    "type": "Lightning",
-    "img": "assets/flatzoid_mythic.png",
-    "slug": "flatzoid_mythic",
-    "stage": "Mythic"
-  },
-  {
-    "id": 21,
-    "name": "Skinwraith · Mythic",
-    "type": "Normal",
-    "img": "assets/skinwraith_mythic.png",
-    "slug": "skinwraith_mythic",
-    "stage": "Mythic"
-  },
-  {
-    "id": 5,
-    "name": "Nessi · Feral",
-    "type": "Water",
-    "img": "assets/nessi_feral.png",
-    "slug": "nessi_feral",
-    "stage": "Feral"
-  },
-  {
-    "id": 10,
-    "name": "Dunewyrm · Feral",
-    "type": "Fire",
-    "img": "assets/dunewyrm_feral.png",
-    "slug": "dunewyrm_feral",
     "stage": "Feral"
   },
   {
@@ -648,6 +672,22 @@ const catalog = [
     "stage": "Feral"
   },
   {
+    "id": 15,
+    "name": "Houshippo · Feral",
+    "type": "Plant",
+    "img": "assets/houshippo_feral.png",
+    "slug": "houshippo_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 16,
+    "name": "Raiko · Feral",
+    "type": "Lightning",
+    "img": "assets/raiko_feral.png",
+    "slug": "raiko_feral",
+    "stage": "Feral"
+  },
+  {
     "id": 17,
     "name": "Flatzoid · Feral",
     "type": "Lightning",
@@ -656,11 +696,123 @@ const catalog = [
     "stage": "Feral"
   },
   {
+    "id": 18,
+    "name": "Greylien · Feral",
+    "type": "Lightning",
+    "img": "assets/greylien_feral.png",
+    "slug": "greylien_feral",
+    "stage": "Feral"
+  },
+  {
     "id": 21,
     "name": "Skinwraith · Feral",
     "type": "Normal",
     "img": "assets/skinwraith_feral.png",
     "slug": "skinwraith_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 26,
+    "name": "Quetzofly · Feral",
+    "type": "Air",
+    "img": "assets/quetzofly_feral.png",
+    "slug": "quetzofly_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 45,
+    "name": "Skulltide · Mythic",
+    "type": "Water",
+    "img": "assets/skulltide_mythic.png",
+    "slug": "skulltide_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 30,
+    "name": "Gnomble · Mythic",
+    "type": "Plant",
+    "img": "assets/gnomble_mythic.png",
+    "slug": "gnomble_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 34,
+    "name": "Orbite · Mythic",
+    "type": "Lightning",
+    "img": "assets/orbite_mythic.png",
+    "slug": "orbite_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 42,
+    "name": "Arizamel · Mythic",
+    "type": "Fire",
+    "img": "assets/arizamel_mythic.png",
+    "slug": "arizamel_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 49,
+    "name": "Wispit · Mythic",
+    "type": "Fire",
+    "img": "assets/wispit_mythic.png",
+    "slug": "wispit_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 47,
+    "name": "Keena · Mythic",
+    "type": "Air",
+    "img": "assets/keena_mythic.png",
+    "slug": "keena_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 45,
+    "name": "Skulltide · Feral",
+    "type": "Water",
+    "img": "assets/skulltide_feral.png",
+    "slug": "skulltide_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 47,
+    "name": "Keena · Feral",
+    "type": "Air",
+    "img": "assets/keena_feral.png",
+    "slug": "keena_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 30,
+    "name": "Gnomble · Feral",
+    "type": "Plant",
+    "img": "assets/gnomble_feral.png",
+    "slug": "gnomble_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 34,
+    "name": "Orbite · Feral",
+    "type": "Lightning",
+    "img": "assets/orbite_feral.png",
+    "slug": "orbite_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 49,
+    "name": "Wispit · Feral",
+    "type": "Fire",
+    "img": "assets/wispit_feral.png",
+    "slug": "wispit_feral",
+    "stage": "Feral"
+  },
+  {
+    "id": 42,
+    "name": "Arizamel · Feral",
+    "type": "Fire",
+    "img": "assets/arizamel_feral.png",
+    "slug": "arizamel_feral",
     "stage": "Feral"
   }
 ];

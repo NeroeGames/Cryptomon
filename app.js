@@ -23,7 +23,7 @@ function renderEntry(d){
  $('cardImg').src=d.cryptograph;$('cardName').textContent=d.name;$('cardNum').textContent='No. '+String(d.id).padStart(3,'0')+' · '+d.type+' · '+d.stage;
  $('note').textContent=d.note||'';
  const evoContainer=$('evolutionPaths'); if(evoContainer) evoContainer.innerHTML=Object.entries(d.evolutions||{}).map(([stage,v])=>'<a class="evocard" href="pages/'+v.slug+'.html"><img src="'+v.img+'" alt=""><span><strong>'+stage[0].toUpperCase()+stage.slice(1)+' Path</strong><small>'+v.name+'</small></span></a>').join('')||'<p>Evolution paths not yet documented.</p>';
- const ix=catalog.findIndex(x=>x.slug===d.slug),prev=catalog[ix-1],next=catalog[ix+1];$('counter').textContent='Entry '+(ix+1)+' of '+catalog.length;
+ const orderedCatalog=[...catalog].sort((a,b)=>['Fabled','Mythic','Feral'].indexOf(a.stage)-['Fabled','Mythic','Feral'].indexOf(b.stage)||a.id-b.id);const ix=orderedCatalog.findIndex(x=>x.slug===d.slug),prev=orderedCatalog[ix-1],next=orderedCatalog[ix+1];$('counter').textContent='Entry '+(ix+1)+' of '+orderedCatalog.length;
  for(const [id,target,txt] of [['prev',prev,'← Previous Entry'],['next',next,'Next Entry →'],['nextLink',next,'Next record →']]){const b=$(id);b.textContent=target?txt:(id==='prev'?'← Back to cover':'End of volume · Back to cover');b.disabled=false;b.onclick=()=>{location.href=target?pageLink(target):'index.html'};}
 }
 renderIndex();$('indexToggle').onclick=()=>$('indexPanel').classList.toggle('open');
