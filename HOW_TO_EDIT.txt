@@ -33,3 +33,13 @@ New Fabled entries: Caitsith, Skulltide, Phantomotive, Keena, Stelmo, Wispit, Kr
 New Fabled records: #051 Skunkapee (Skunk Ape) and #052 Wendrift (Wendigo). Each includes hero, 2 attack scenes (350 x 360 px), and cryptograph.
 
 New front matter: introduction.html, types.html, camera.html. Cover opens introduction.html. Camera art: assets/crypto_camera.png. Type matchups are provisional fictional rules.
+
+SEVEN NEW MYTHIC FORMS UPDATE
+Added dedicated Mythic pages for Kodaroot, Yetoro, Sandowny, Lambloom, Ahoolen, Bambooel, and Tsuchubby.
+Each new page has a transparent hero image, two individual 350 x 360 action-study JPGs, a distinct cryptograph JPG, original descriptions and abilities, and a Fabled evolution link.
+The matching Fabled pages now link to their Mythic pages. The Field Index and next/previous navigation follow stage order (Fabled, Mythic, Feral) and ID within each stage.
+
+SEVEN NEW FERAL FORMS UPDATE
+Added dedicated Feral pages for Kodaroot, Yetoro, Sandowny, Lambloom, Ahoolen, Bambooel, and Tsuchubby.
+Each page has the original transparent hero PNG, two 350 x 360 attack PNGs, a new cropped cryptograph JPG, unique descriptions and research notes, and links to both Fabled and Mythic forms.
+The Fabled and Mythic pages also link to the new Feral forms. All seven are listed in the Field Index in Feral stage and numeric entry order.

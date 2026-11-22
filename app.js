@@ -16,6 +16,7 @@ function renderIndex(){
 function renderEntry(d){
  $('coverPage').hidden=true;$('bookPages').hidden=false;$('bookFooter').hidden=false;
  $('name').textContent=d.name;$('species').textContent=d.species+' · '+d.stage+' stage';$('number').textContent='#'+String(d.id).padStart(3,'0');
+ const stageHeader=document.querySelector('.righttop .tiny');if(stageHeader)stageHeader.textContent='Vol. I · '+d.stage;
  $('hero').src=d.img;$('hero').alt=d.name+' character art';$('desc').textContent=d.desc;$('origin').textContent=d.origin;
  $('type').innerHTML='<span class="typepill" style="--typebg:'+(colors[d.type]||'#797066')+'">'+d.emoji+' '+d.type+'</span>';
  $('biome').textContent=d.biome;
