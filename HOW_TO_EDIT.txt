@@ -29,3 +29,7 @@ V19 UPDATE
 V20 UPDATE: Added four independent editable Fabled pages: selkira, orbite, paciencia_abductors, ogoro. Each includes hero PNG, two attack JPGs, and cryptograph JPG. Ogopogo named Ogoro.
 
 New Fabled entries: Caitsith, Skulltide, Phantomotive, Keena, Stelmo, Wispit, Kraken. Navigation follows Fabled, Mythic, Feral; each stage is sorted by entry ID.
+
+New Fabled records: #051 Skunkapee (Skunk Ape) and #052 Wendrift (Wendigo). Each includes hero, 2 attack scenes (350 x 360 px), and cryptograph.
+
+New front matter: introduction.html, types.html, camera.html. Cover opens introduction.html. Camera art: assets/crypto_camera.png. Type matchups are provisional fictional rules.

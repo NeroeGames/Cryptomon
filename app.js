@@ -2,7 +2,7 @@ const $=id=>document.getElementById(id);
 const colors={Plant:'#4b8b4d',Fire:'#b94e29',Lightning:'#ae8526',Water:'#397c9e',Air:'#806a9e',Normal:'#797066'};
 function pageLink(item){return 'pages/'+item.slug+'.html'}
 function renderIndex(){
- const grid=$('indexGrid'); grid.innerHTML='';
+ const grid=$('indexGrid'); grid.innerHTML='<section class="indexstage"><h3 class="indexstage-title">Opening Chapters</h3><div class="indexgrid"><a class="indexitem" href="introduction.html">I · The Emergence</a><a class="indexitem" href="types.html">II · Affinity Chart</a><a class="indexitem" href="camera.html">III · Crypto-Camera</a></div></section>';
  for(const stage of ['Fabled','Mythic','Feral']){
   const entries=catalog.filter(x=>x.stage===stage).sort((a,b)=>a.id-b.id);
   if(!entries.length)continue;
@@ -24,8 +24,8 @@ function renderEntry(d){
  $('note').textContent=d.note||'';
  const evoContainer=$('evolutionPaths'); if(evoContainer) evoContainer.innerHTML=Object.entries(d.evolutions||{}).map(([stage,v])=>'<a class="evocard" href="pages/'+v.slug+'.html"><img src="'+v.img+'" alt=""><span><strong>'+stage[0].toUpperCase()+stage.slice(1)+' Path</strong><small>'+v.name+'</small></span></a>').join('')||'<p>Evolution paths not yet documented.</p>';
  const orderedCatalog=[...catalog].sort((a,b)=>['Fabled','Mythic','Feral'].indexOf(a.stage)-['Fabled','Mythic','Feral'].indexOf(b.stage)||a.id-b.id);const ix=orderedCatalog.findIndex(x=>x.slug===d.slug),prev=orderedCatalog[ix-1],next=orderedCatalog[ix+1];$('counter').textContent='Entry '+(ix+1)+' of '+orderedCatalog.length;
- for(const [id,target,txt] of [['prev',prev,'← Previous Entry'],['next',next,'Next Entry →'],['nextLink',next,'Next record →']]){const b=$(id);b.textContent=target?txt:(id==='prev'?'← Back to cover':'End of volume · Back to cover');b.disabled=false;b.onclick=()=>{location.href=target?pageLink(target):'index.html'};}
+ for(const [id,target,txt] of [['prev',prev,'← Previous Entry'],['next',next,'Next Entry →'],['nextLink',next,'Next record →']]){const b=$(id);b.textContent=target?txt:(id==='prev'?'← Crypto-Camera':'End of volume · Back to cover');b.disabled=false;b.onclick=()=>{location.href=target?pageLink(target):(id==='prev'?'camera.html':'index.html')};}
 }
 renderIndex();$('indexToggle').onclick=()=>$('indexPanel').classList.toggle('open');
 if(typeof entryData!=='undefined' && entryData && typeof entryData==='object')renderEntry(entryData);
-else $('openBook').onclick=()=>{location.href=pageLink(catalog[0])};
+else if($('openBook')) $('openBook').onclick=()=>{location.href='introduction.html'};

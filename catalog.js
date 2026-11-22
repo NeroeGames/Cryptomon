@@ -814,5 +814,21 @@ const catalog = [
     "img": "assets/arizamel_feral.png",
     "slug": "arizamel_feral",
     "stage": "Feral"
-  }
+  },
+{
+  "id": 51,
+  "name": "Skunkapee",
+  "type": "Normal",
+  "img": "assets/skunkapee_hero.png",
+  "slug": "skunkapee",
+  "stage": "Fabled"
+},
+{
+  "id": 52,
+  "name": "Wendrift",
+  "type": "Normal",
+  "img": "assets/wendrift_hero.png",
+  "slug": "wendrift",
+  "stage": "Fabled"
+}
 ];
