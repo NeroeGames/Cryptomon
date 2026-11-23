@@ -6,8 +6,8 @@ function renderIndex(){
  for(const stage of ['Fabled','Mythic','Feral']){
   const entries=catalog.filter(x=>x.stage===stage).sort((a,b)=>a.id-b.id);
   if(!entries.length)continue;
-  const section=document.createElement('section');section.className='indexstage';
-  const title=document.createElement('h3');title.className='indexstage-title';title.textContent=stage+' · '+entries.length+' Records';section.appendChild(title);
+  const section=document.createElement('section');section.className='indexstage stage-'+stage.toLowerCase();
+  const title=document.createElement('h3');title.className='indexstage-title';title.textContent=stage+' · '+entries.length+' Records';if(stage==='Mythic'){const emblem=document.createElement('img');emblem.src='assets/mythic_chapter_emblem.png';emblem.alt='';emblem.className='mythic-chapter-emblem';title.prepend(emblem);}section.appendChild(title);
   const cards=document.createElement('div');cards.className='indexgrid';
   cards.innerHTML=entries.map(x=>'<a class="indexitem" href="'+pageLink(x)+'"><img src="'+x.img+'" alt=""><span>'+x.name+'</span><small>'+x.type+' · '+x.stage+'</small></a>').join('');
   section.appendChild(cards);grid.appendChild(section);

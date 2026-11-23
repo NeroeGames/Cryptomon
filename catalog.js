@@ -680,6 +680,78 @@ const catalog = [
     "stage": "Mythic"
   },
   {
+    "id": 20,
+    "name": "Lloronae · Mythic",
+    "type": "Water",
+    "img": "assets/lloronae_mythic.png",
+    "slug": "lloronae_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 22,
+    "name": "Braymutt · Mythic",
+    "type": "Normal",
+    "img": "assets/braymutt_mythic.png",
+    "slug": "braymutt_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 31,
+    "name": "Agrobelter · Mythic",
+    "type": "Normal",
+    "img": "assets/agrobelter_mythic.png",
+    "slug": "agrobelter_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 32,
+    "name": "Popobat · Mythic",
+    "type": "Air",
+    "img": "assets/popobat_mythic.png",
+    "slug": "popobat_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 33,
+    "name": "Selkira · Mythic",
+    "type": "Water",
+    "img": "assets/selkira_mythic.png",
+    "slug": "selkira_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 35,
+    "name": "Palenciagas · Mythic",
+    "type": "Lightning",
+    "img": "assets/paciencia_abductors_mythic.png",
+    "slug": "paciencia_abductors_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 36,
+    "name": "Ogoro · Mythic",
+    "type": "Water",
+    "img": "assets/ogoro_mythic.png",
+    "slug": "ogoro_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 37,
+    "name": "Hootveil · Mythic",
+    "type": "Air",
+    "img": "assets/hootveil_mythic.png",
+    "slug": "hootveil_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 38,
+    "name": "Snallygaster · Mythic",
+    "type": "Air",
+    "img": "assets/snallygaster_mythic.png",
+    "slug": "snallygaster_mythic",
+    "stage": "Mythic"
+  },
+  {
     "id": 1,
     "name": "Jaks · Feral",
     "type": "Plant",
@@ -942,5 +1014,61 @@ const catalog = [
     "img": "assets/tsuchubby_feral.png",
     "slug": "tsuchubby_feral",
     "stage": "Feral"
+  },
+  {
+    "id": 39,
+    "name": "Hodax · Mythic",
+    "type": "Plant",
+    "img": "assets/hodax_mythic.png",
+    "slug": "hodax_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 40,
+    "name": "Carmyx · Mythic",
+    "type": "Normal",
+    "img": "assets/carmyx_mythic.png",
+    "slug": "carmyx_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 41,
+    "name": "Furrowtrout · Mythic",
+    "type": "Water",
+    "img": "assets/furrowtrout_mythic.png",
+    "slug": "furrowtrout_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 43,
+    "name": "Kunekune · Mythic",
+    "type": "Normal",
+    "img": "assets/kunekune_mythic.png",
+    "slug": "kunekune_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 44,
+    "name": "Caitsith · Mythic",
+    "type": "Normal",
+    "img": "assets/caitsith_mythic.png",
+    "slug": "caitsith_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 46,
+    "name": "Phantomotive · Mythic",
+    "type": "Fire",
+    "img": "assets/phantomotive_mythic.png",
+    "slug": "phantomotive_mythic",
+    "stage": "Mythic"
+  },
+  {
+    "id": 48,
+    "name": "Stelmo · Mythic",
+    "type": "Lightning",
+    "img": "assets/stelmo_mythic.png",
+    "slug": "stelmo_mythic",
+    "stage": "Mythic"
   }
 ];
