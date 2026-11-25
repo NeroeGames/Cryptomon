@@ -1068,8 +1068,8 @@ function renderIndex(){
   section.open=typeof saved[id]==='boolean'?saved[id]:defaultOpen;
   sections.push(section);grid.appendChild(section);section.addEventListener('toggle',save);return cards;
  }
- const opening=group('Opening','Opening Chapters · 4 Records',true);
- for(const [label,href] of [['I · The Emergence','introduction.html'],['II · Affinity Chart','types.html'],['III · Crypto-Camera','camera.html'],['IV · World Atlas','atlas.html']]){const a=document.createElement('a');a.className='indexitem';a.href=href;a.textContent=label;opening.appendChild(a)}
+ const opening=group('Opening','Opening Chapters · 5 Records',true);
+ for(const [label,href] of [['I · The Emergence','introduction.html'],['II · Affinity Chart','types.html'],['III · Crypto-Camera','camera.html'],['IV · World Atlas','atlas.html'],['V · The Feral Phenomenon','feral.html']]){const a=document.createElement('a');a.className='indexitem';a.href=href;a.textContent=label;opening.appendChild(a)}
  for(const stage of ['Fabled','Mythic','Feral']){
   const entries=catalog.filter(x=>x.stage===stage).sort((a,b)=>a.id-b.id);if(!entries.length)continue;
   const cards=group(stage,stage+' · '+entries.length+' Records',Boolean(current&&current.stage===stage));
@@ -1110,5 +1110,15 @@ else if($('openBook')) $('openBook').onclick=()=>{location.href='introduction.ht
  const link=document.createElement('a');link.href='atlas.html';link.textContent='◈ World Atlas';link.style.cssText='border:1px solid #a38b6d;background:#2b2527;color:#f5e6c5;border-radius:6px;padding:10px 13px;font:600 12px Cinzel,Georgia,serif;text-decoration:none;white-space:nowrap';
  if(document.title.startsWith('World Atlas'))link.setAttribute('aria-current','page');nav.prepend(link);
  if(document.title.startsWith('Crypto-Camera')){const next=document.querySelector('.intro-actions a:last-child');if(next){next.href='atlas.html';next.textContent='Continue to World Atlas →';}}
- if(typeof entryData!=='undefined'&&entryData&&entryData.slug==='jaks'){const prev=document.getElementById('prev');if(prev){prev.textContent='← World Atlas';prev.onclick=()=>{location.href='atlas.html'};}}
+ if(typeof entryData!=='undefined'&&entryData&&entryData.slug==='jaks'){const prev=document.getElementById('prev');if(prev){prev.textContent='← The Feral Phenomenon';prev.onclick=()=>{location.href='feral.html'};}}
+})();
+
+// Chapter V: Feral Phenomenon. Keep the Atlas and collapsible index intact.
+(function(){
+ const atlas=document.querySelector('.topbar a[href="atlas.html"]');
+ if(atlas){atlas.parentElement.classList.add('chapter-shortcuts');const css=document.createElement('style');css.textContent='@media(max-width:650px){.topbar{flex-direction:column;align-items:flex-start;padding:12px 14px;gap:10px}.topbar .chapter-shortcuts{width:100%;justify-content:flex-start!important;gap:6px!important}.topbar .chapter-shortcuts a,.topbar .chapter-shortcuts button{font-size:11px!important;padding:8px 9px!important;white-space:nowrap}}';document.head.append(css);}
+
+ if(atlas){const link=atlas.cloneNode(false);link.href='feral.html';link.textContent='✦ Feral Phenomenon';link.style.background='#48282a';link.style.borderColor='#b47e6d';link.removeAttribute('aria-current');if(document.title.startsWith('The Feral Phenomenon'))link.setAttribute('aria-current','page');atlas.after(link);}
+ if(document.title.startsWith('World Atlas')){const next=document.querySelector('.intro-actions a:last-child');if(next){next.href='feral.html';next.textContent='Continue to The Feral Phenomenon →';}}
+ if(typeof entryData!=='undefined'&&entryData&&entryData.stage==='Feral'){const note=document.createElement('a');note.href='feral.html';note.textContent='✦ Related research: The Feral Phenomenon →';note.style.cssText='display:block;margin:14px 0;color:#783e39;font:700 13px Georgia,serif';const paths=document.getElementById('evolutionPaths');if(paths)paths.after(note);}
 })();
