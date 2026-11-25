@@ -1068,8 +1068,8 @@ function renderIndex(){
   section.open=typeof saved[id]==='boolean'?saved[id]:defaultOpen;
   sections.push(section);grid.appendChild(section);section.addEventListener('toggle',save);return cards;
  }
- const opening=group('Opening','Opening Chapters · 3 Records',true);
- for(const [label,href] of [['I · The Emergence','introduction.html'],['II · Affinity Chart','types.html'],['III · Crypto-Camera','camera.html']]){const a=document.createElement('a');a.className='indexitem';a.href=href;a.textContent=label;opening.appendChild(a)}
+ const opening=group('Opening','Opening Chapters · 4 Records',true);
+ for(const [label,href] of [['I · The Emergence','introduction.html'],['II · Affinity Chart','types.html'],['III · Crypto-Camera','camera.html'],['IV · World Atlas','atlas.html']]){const a=document.createElement('a');a.className='indexitem';a.href=href;a.textContent=label;opening.appendChild(a)}
  for(const stage of ['Fabled','Mythic','Feral']){
   const entries=catalog.filter(x=>x.stage===stage).sort((a,b)=>a.id-b.id);if(!entries.length)continue;
   const cards=group(stage,stage+' · '+entries.length+' Records',Boolean(current&&current.stage===stage));
@@ -1101,3 +1101,14 @@ function renderEntry(d){
 renderIndex();const indexToggle=$('indexToggle'),indexPanel=$('indexPanel');if(indexToggle&&indexPanel){indexToggle.setAttribute('aria-controls','indexPanel');indexToggle.setAttribute('aria-expanded',String(indexPanel.classList.contains('open')));indexToggle.onclick=()=>{indexToggle.setAttribute('aria-expanded',String(indexPanel.classList.toggle('open')));};}
 if(typeof entryData!=='undefined' && entryData && typeof entryData==='object')renderEntry(entryData);
 else if($('openBook')) $('openBook').onclick=()=>{location.href='introduction.html'};
+
+// World Atlas shortcut: shared by every journal page.
+(function(){
+ const toggle=document.getElementById('indexToggle');if(!toggle)return;
+ const nav=document.createElement('div');nav.style.cssText='display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;align-items:center';
+ toggle.before(nav);nav.appendChild(toggle);
+ const link=document.createElement('a');link.href='atlas.html';link.textContent='◈ World Atlas';link.style.cssText='border:1px solid #a38b6d;background:#2b2527;color:#f5e6c5;border-radius:6px;padding:10px 13px;font:600 12px Cinzel,Georgia,serif;text-decoration:none;white-space:nowrap';
+ if(document.title.startsWith('World Atlas'))link.setAttribute('aria-current','page');nav.prepend(link);
+ if(document.title.startsWith('Crypto-Camera')){const next=document.querySelector('.intro-actions a:last-child');if(next){next.href='atlas.html';next.textContent='Continue to World Atlas →';}}
+ if(typeof entryData!=='undefined'&&entryData&&entryData.slug==='jaks'){const prev=document.getElementById('prev');if(prev){prev.textContent='← World Atlas';prev.onclick=()=>{location.href='atlas.html'};}}
+})();
