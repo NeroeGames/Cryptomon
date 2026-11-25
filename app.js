@@ -1068,8 +1068,8 @@ function renderIndex(){
   section.open=typeof saved[id]==='boolean'?saved[id]:defaultOpen;
   sections.push(section);grid.appendChild(section);section.addEventListener('toggle',save);return cards;
  }
- const opening=group('Opening','Opening Chapters · 5 Records',true);
- for(const [label,href] of [['I · The Emergence','introduction.html'],['II · Affinity Chart','types.html'],['III · Crypto-Camera','camera.html'],['IV · World Atlas','atlas.html'],['V · The Feral Phenomenon','feral.html']]){const a=document.createElement('a');a.className='indexitem';a.href=href;a.textContent=label;opening.appendChild(a)}
+ const opening=group('Opening','Opening Chapters · 6 Records',true);
+ for(const [label,href] of [['I · The Emergence','introduction.html'],['II · Affinity Chart','types.html'],['III · Crypto-Camera','camera.html'],['IV · World Atlas','atlas.html'],['V · The Feral Phenomenon','feral.html'],['Field Trial · Capture Simulator','capture.html']]){const a=document.createElement('a');a.className='indexitem';a.href=href;a.textContent=label;opening.appendChild(a)}
  for(const stage of ['Fabled','Mythic','Feral']){
   const entries=catalog.filter(x=>x.stage===stage).sort((a,b)=>a.id-b.id);if(!entries.length)continue;
   const cards=group(stage,stage+' · '+entries.length+' Records',Boolean(current&&current.stage===stage));
@@ -1121,4 +1121,12 @@ else if($('openBook')) $('openBook').onclick=()=>{location.href='introduction.ht
  if(atlas){const link=atlas.cloneNode(false);link.href='feral.html';link.textContent='✦ Feral Phenomenon';link.style.background='#48282a';link.style.borderColor='#b47e6d';link.removeAttribute('aria-current');if(document.title.startsWith('The Feral Phenomenon'))link.setAttribute('aria-current','page');atlas.after(link);}
  if(document.title.startsWith('World Atlas')){const next=document.querySelector('.intro-actions a:last-child');if(next){next.href='feral.html';next.textContent='Continue to The Feral Phenomenon →';}}
  if(typeof entryData!=='undefined'&&entryData&&entryData.stage==='Feral'){const note=document.createElement('a');note.href='feral.html';note.textContent='✦ Related research: The Feral Phenomenon →';note.style.cssText='display:block;margin:14px 0;color:#783e39;font:700 13px Georgia,serif';const paths=document.getElementById('evolutionPaths');if(paths)paths.after(note);}
+})();
+
+// Capture training: independent simulator, no changes to catalog or entries.
+(function(){
+ const atlas=document.querySelector('.topbar a[href="atlas.html"]');
+ if(atlas){const link=atlas.cloneNode(false);link.href='capture.html';link.textContent='◉ Capture Trial';link.style.background='#344b3b';link.style.borderColor='#8ca17d';link.removeAttribute('aria-current');atlas.parentElement.insertBefore(link,atlas.parentElement.querySelector('#indexToggle'));}
+ if(document.title.startsWith('Crypto-Camera')){const article=document.querySelector('.introbook .intro-page:last-child');if(article){const a=document.createElement('a');a.href='capture.html';a.textContent='◉ Try the capture simulator →';a.style.cssText='display:block;margin:18px 0;padding:14px 18px;background:#354e3c;color:#f5e6c5;border:1px solid #7e8c65;border-radius:5px;text-decoration:none;font-weight:bold;text-align:center';const folio=article.querySelector('.folio');article.insertBefore(a,folio||null);}}
+ if(typeof entryData!=='undefined'&&entryData&&entryData.slug==='jaks'){const a=document.createElement('a');a.href='capture.html';a.textContent='◉ Field trial: photograph Jaks →';a.style.cssText='display:block;margin:12px 0;color:#38553a;font:700 14px Georgia,serif';const paths=document.getElementById('evolutionPaths');if(paths)paths.after(a);}
 })();
