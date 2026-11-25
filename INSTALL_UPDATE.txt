@@ -1,0 +1,1 @@
+Extract the contents of this ZIP into the existing Cryptomon Compendium folder (the folder containing index.html). Allow replacement of catalog.js and HOW_TO_EDIT.txt. The eight new pages and assets will be added; existing pages and artwork remain untouched. Open index.html.

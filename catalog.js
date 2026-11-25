@@ -416,6 +416,70 @@ const catalog = [
     "stage": "Fabled"
   },
   {
+    "id": 53,
+    "name": "Fiddlevil",
+    "type": "Fire",
+    "img": "assets/fiddlevil_hero.png",
+    "slug": "fiddlevil",
+    "stage": "Fabled"
+  },
+  {
+    "id": 54,
+    "name": "Wrapwraith",
+    "type": "Air",
+    "img": "assets/wrapwraith_hero.png",
+    "slug": "wrapwraith",
+    "stage": "Fabled"
+  },
+  {
+    "id": 55,
+    "name": "Hoopsire",
+    "type": "Lightning",
+    "img": "assets/hoopsire_hero.png",
+    "slug": "hoopsire",
+    "stage": "Fabled"
+  },
+  {
+    "id": 56,
+    "name": "Prickitty",
+    "type": "Plant",
+    "img": "assets/prickitty_hero.png",
+    "slug": "prickitty",
+    "stage": "Fabled"
+  },
+  {
+    "id": 57,
+    "name": "Guttergator",
+    "type": "Water",
+    "img": "assets/guttergator_hero.png",
+    "slug": "guttergator",
+    "stage": "Fabled"
+  },
+  {
+    "id": 58,
+    "name": "Mirrormary",
+    "type": "Normal",
+    "img": "assets/mirrormary_hero.png",
+    "slug": "mirrormary",
+    "stage": "Fabled"
+  },
+  {
+    "id": 59,
+    "name": "Noctihorn",
+    "type": "Lightning",
+    "img": "assets/noctihorn_hero.png",
+    "slug": "noctihorn",
+    "stage": "Fabled"
+  },
+  {
+    "id": 60,
+    "name": "Seraphluff",
+    "type": "Air",
+    "img": "assets/seraphluff_hero.png",
+    "slug": "seraphluff",
+    "stage": "Fabled"
+  },
+  {
     "id": 1,
     "name": "Jaks · Mythic",
     "type": "Plant",

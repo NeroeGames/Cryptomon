@@ -43,3 +43,6 @@ SEVEN NEW FERAL FORMS UPDATE
 Added dedicated Feral pages for Kodaroot, Yetoro, Sandowny, Lambloom, Ahoolen, Bambooel, and Tsuchubby.
 Each page has the original transparent hero PNG, two 350 x 360 attack PNGs, a new cropped cryptograph JPG, unique descriptions and research notes, and links to both Fabled and Mythic forms.
 The Fabled and Mythic pages also link to the new Feral forms. All seven are listed in the Field Index in Feral stage and numeric entry order.
+
+EIGHT NEW FABLED RECORDS UPDATE
+Added #053–060: Fiddlevil, Wrapwraith, Hoopsire, Prickitty, Guttergator, Mirrormary, Noctihorn, Seraphluff. Each has an independent page, supplied hero artwork, two 350 x 360 PNG action studies, and a text-free cryptograph JPG. Field Index and navigation are generated from catalog.js. Evolution paths remain undocumented.
