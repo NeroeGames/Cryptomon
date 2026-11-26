@@ -1069,7 +1069,7 @@ function renderIndex(){
   sections.push(section);grid.appendChild(section);section.addEventListener('toggle',save);return cards;
  }
  const opening=group('Opening','Opening Chapters · 6 Records',true);
- for(const [label,href] of [['I · The Emergence','introduction.html'],['II · Affinity Chart','types.html'],['III · Crypto-Camera','camera.html'],['IV · World Atlas','atlas.html'],['V · The Feral Phenomenon','feral.html'],['Field Trial · Capture Simulator','capture.html']]){const a=document.createElement('a');a.className='indexitem';a.href=href;a.textContent=label;opening.appendChild(a)}
+ for(const [label,href] of [['I · The Emergence','introduction.html'],['II · Affinity Chart','types.html'],['III · Crypto-Camera','camera.html'],['IV · World Atlas','atlas.html'],['V · The Feral Phenomenon','feral.html'],['Field Trial · Capture Simulator','capture.html'],['Field Trial · Battle Simulator','battle.html']]){const a=document.createElement('a');a.className='indexitem';a.href=href;a.textContent=label;opening.appendChild(a)}
  for(const stage of ['Fabled','Mythic','Feral']){
   const entries=catalog.filter(x=>x.stage===stage).sort((a,b)=>a.id-b.id);if(!entries.length)continue;
   const cards=group(stage,stage+' · '+entries.length+' Records',Boolean(current&&current.stage===stage));
@@ -1129,3 +1129,5 @@ else if($('openBook')) $('openBook').onclick=()=>{location.href='introduction.ht
  if(document.title.startsWith('Crypto-Camera')){const article=document.querySelector('.introbook .intro-page:last-child');if(article){const a=document.createElement('a');a.href='capture.html';a.textContent='◉ Try the capture simulator →';a.style.cssText='display:block;margin:18px 0;padding:14px 18px;background:#354e3c;color:#f5e6c5;border:1px solid #7e8c65;border-radius:5px;text-decoration:none;font-weight:bold;text-align:center';const folio=article.querySelector('.folio');article.insertBefore(a,folio||null);}}
  if(typeof entryData!=='undefined'&&entryData&&['jaks','orbite'].includes(entryData.slug)){const a=document.createElement('a');a.href='capture.html?trial='+entryData.slug;a.textContent='◉ Field trial: photograph '+(entryData.slug==='orbite'?'Orbite':'Jaks')+' →';a.style.cssText='display:block;margin:12px 0;color:#38553a;font:700 14px Georgia,serif';const paths=document.getElementById('evolutionPaths');if(paths)paths.after(a);}
 })();
+
+(function(){const a=document.querySelector('.topbar a[href="capture.html"]');if(a){const b=a.cloneNode(false);b.href="battle.html";b.textContent="⚔ Battle Simulator";a.after(b)}})();
